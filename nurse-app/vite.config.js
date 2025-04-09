@@ -24,7 +24,7 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: parseInt(process.env.PORT) || 3002,
-    allowedHosts: ["https://nurse-app-izij.onrender.com"], // Replace with your actual Render URL
+    allowedHosts: ["nurse-app-izij.onrender.com"], // Replace with your actual Render URL
   },
 
   build: {
