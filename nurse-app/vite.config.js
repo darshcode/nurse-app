@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss(),
     federation({
       name: "nurseApp",
-      filename: "remoteEntry.js", // remote exposed file
+      filename: "remoteEntry.js",
       exposes: {
         "./NurseAppComponent": "./src/NurseAppComponent",
       },
@@ -24,7 +24,7 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: parseInt(process.env.PORT) || 3002,
-    allowedHosts: ["nurse-app-izij.onrender.com"], // Replace with your actual Render URL
+    allowedHosts: ["nurse-app-izij.onrender.com"],
   },
 
   build: {
